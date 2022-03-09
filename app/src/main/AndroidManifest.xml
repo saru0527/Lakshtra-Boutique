@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.e_commerce_1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.E_Commerce_1"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activities.VideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chatbot.BotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".email_auth.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".email_auth.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".email_auth.UploadProfilePicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".email_auth.DeleteProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".email_auth.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".email_auth.UpdateEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".email_auth.UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".email_auth.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PlacedOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NavCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".email_auth.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetailedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ViewAllActivity"
+            android:exported="false" />
+        <activity
+            android:name=".email_auth.LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.E_Commerce_1.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

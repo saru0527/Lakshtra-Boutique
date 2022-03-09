@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/pop_image"
+            android:layout_width="280dp"
+            android:layout_height="190dp"
+            app:riv_corner_radius="14dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_logo"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/pop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alice"
+            android:text="Popular Products"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/pop_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Description"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:tint="@color/black"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_stars_24"
+                android:layout_marginLeft="-5dp"/>
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/pop_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="5.0"
+                android:layout_weight="2"
+                android:fontFamily="@font/alice"/>
+            <TextView
+                android:id="@+id/pop_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Discount 20% Off"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:fontFamily="@font/alice"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
